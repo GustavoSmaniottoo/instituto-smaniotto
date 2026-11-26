@@ -34,8 +34,8 @@ CREATE TABLE categoria (
 CREATE TABLE item (
   id_item INT AUTO_INCREMENT PRIMARY KEY,
   id_categoria INT NOT NULL,
-  nome VARCHAR(120) NOT NULL,
-  unidade_medida VARCHAR(20) NOT NULL DEFAULT 'unidade',
+  nome VARCHAR(150) NOT NULL,
+  unidade VARCHAR(20) NOT NULL DEFAULT 'unidade',
   valor_estimado DECIMAL(10, 2) NOT NULL DEFAULT 0.00 CHECK (valor_estimado >= 0),
   FOREIGN KEY (id_categoria) REFERENCES categoria (id_categoria)
 );

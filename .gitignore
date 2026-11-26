@@ -26,3 +26,8 @@ dist-ssr
 # Variáveis de ambiente
 .env
 
+# Materiais da aula e prints de entrega locais
+Materiais*
+atividade-*.jpg
+
+
