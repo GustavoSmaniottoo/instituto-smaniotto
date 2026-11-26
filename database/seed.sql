@@ -3,6 +3,13 @@
 SET NAMES utf8mb4;
 USE instituto_smaniotto;
 
+-- Usuário de demonstração
+-- e-mail: voluntario@exemplo.com   senha: smaniotto123
+-- O banco guarda só o hash bcrypt da senha, nunca a senha.
+INSERT INTO usuario (nome, email, senha_hash) VALUES
+  ('Voluntário Smaniotto', 'voluntario@exemplo.com',
+   '$2b$10$9hqrPHtlUBCDp43gdeCqVOQShNDZXjhOuN.VMqFJvHHzwjV5XL2.2');
+
 INSERT INTO campanha (titulo, descricao, meta_valor, data_inicio, data_fim) VALUES
   ('Inverno Solidário', 'Arrecadação de agasalhos e cobertores para famílias atendidas', 5000.00, '2026-05-01', '2026-08-31'),
   ('Cesta Básica Mensal', 'Montagem de cestas de alimentos e itens de higiene', 8000.00, '2026-01-01', NULL);
