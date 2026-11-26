@@ -2,6 +2,7 @@ import "./style.css";
 
 const app = document.querySelector("#app");
 app.innerHTML = `
+  <img src="/cat-jojo.gif" alt="Mascote Instituto Smaniotto" class="mascote" />
   <h1>Instituto Smaniotto</h1>
   <p>Status da API: <strong id="status">verificando...</strong></p>
 `;

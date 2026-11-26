@@ -62,10 +62,9 @@ h2 {
 h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
-  margin: 32px 0;
+  margin: 0;
   @media (max-width: 1024px) {
     font-size: 36px;
-    margin: 20px 0;
   }
 }
 h2 {
@@ -156,12 +155,23 @@ code {
   width: 1126px;
   max-width: 100%;
   margin: 0 auto;
+  padding: 24px;
   text-align: center;
   border-inline: 1px solid var(--border);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
   box-sizing: border-box;
+}
+
+.mascote {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
 
 #center {
