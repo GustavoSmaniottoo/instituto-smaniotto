@@ -85,6 +85,56 @@ nav a[aria-current="page"] {
   border-bottom: 2px solid #fff;
 }
 
+.usuario-barra {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.usuario {
+  color: #ccfbf1;
+  font-size: 0.875rem;
+}
+
+.botao-sair {
+  min-height: 36px;
+  padding: 4px 12px;
+  font-size: 0.875rem;
+}
+
+/* Tela de login */
+.login {
+  max-width: 380px;
+  margin: 8vh auto;
+  padding: var(--espaco);
+}
+
+.login-cabecalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.login-cabecalho h1 {
+  margin: 0;
+  color: var(--cor-primaria);
+}
+
+.login-mascote {
+  width: 96px;
+  height: 96px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.login button {
+  width: 100%;
+}
+
 main {
   padding: var(--espaco);
   max-width: 1100px;
@@ -331,6 +381,10 @@ button:disabled {
   }
 
   nav {
+    margin-top: 0;
+  }
+
+  .usuario-barra {
     margin-top: 0;
   }
 
